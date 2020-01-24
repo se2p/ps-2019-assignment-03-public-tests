@@ -50,14 +50,14 @@ In order to run all the tests against all the programs use the following command
 
 ```
 cd public-tests
-./run-tests.sh ./tests <LOCATION_OF_YOUR_PRIVATE_REPO>
+./run-tests.sh all <LOCATION_OF_TESTS> <LOCATION_OF_YOUR_PRIVATE_REPO>
 ```
 
 In order to run all the tests against a single program (e.g., `task-1`) use the following command:
 
 ```
 cd public-tests
-./run-tests.sh ./tests <LOCATION_OF_YOUR_PRIVATE_REPO>/task-1
+./run-tests.sh all <LOCATION_OF_TESTS> <LOCATION_OF_YOUR_PRIVATE_REPO>/task-1
 ```
 
 
@@ -67,14 +67,14 @@ In order to run all the tests which previously failed against all programs use t
 
 ```
 cd public-tests
-./run-tests.sh ./tests <LOCATION_OF_YOUR_PRIVATE_REPO> --only-failed
+./run-tests.sh failed ./tests <LOCATION_OF_YOUR_PRIVATE_REPO> 
 ```
 
 In order to run all the tests which previously failed against a single programs use the following command:
 
 ```
 cd public-tests
-./run-tests.sh ./tests <LOCATION_OF_YOUR_PRIVATE_REPO>/task-1 --only-failed
+./run-tests.sh failed ./tests <LOCATION_OF_YOUR_PRIVATE_REPO>/task-1
 ```
 
 #### Running a single test
@@ -83,12 +83,12 @@ In order to run a single test (e.g. `test-01`) against all the programs use the 
 
 ```
 cd public-tests
-./run-tests.sh ./tests/test-01 <LOCATION_OF_YOUR_PRIVATE_REPO>
+./run-tests.sh all ./tests/test-01 <LOCATION_OF_YOUR_PRIVATE_REPO>
 ```
 
 In order to run a single test (e.g. `test-01`) against a single program (e.g. `task-01`) use the following command:
 
 ```
 cd public-tests
-./run-tests.sh ./tests/test-01 <LOCATION_OF_YOUR_PRIVATE_REPO>/task-1
+./run-tests.sh all ./tests/test-01 <LOCATION_OF_YOUR_PRIVATE_REPO>/task-1
 ```
