@@ -1,0 +1,20 @@
+>> Guess the 4-digit secret code (10):
+0000
+
+>> Wrong! SVD=10, HD=4
+>> Guess the 4-digit secret code (9):
+1000
+
+>> Wrong! SVD=9, HD=3
+>> Guess the 4-digit secret code (8):
+8765
+
+>> Wrong! SVD=-16, HD=4
+>> Guess the 4-digit secret code (7):
+3214
+
+>> Wrong! SVD=0, HD=2
+>> Guess the 4-digit secret code (6):
+1234
+
+>> Correct - You won!
