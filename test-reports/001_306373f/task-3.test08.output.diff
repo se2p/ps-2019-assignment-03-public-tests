@@ -1,0 +1,12 @@
+1,8c1,2
+< >> Guess the 4-digit secret code (10):
+< 123
+< 
+< >> Yikes! Invalid input
+< >> Guess the 4-digit secret code (10):
+< 1234
+< 
+< >> Correct - You won!
+---
+> >> 123
+> >> 1234

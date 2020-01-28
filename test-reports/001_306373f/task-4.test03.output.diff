@@ -1,0 +1,54 @@
+1,41c1,11
+< >> Guess the 4-digit secret code (10):
+< 0000
+< 
+< >> Wrong! SVD=10, HD=4
+< >> Guess the 4-digit secret code (9):
+< 0000
+< 
+< >> Wrong! SVD=10, HD=4
+< >> Guess the 4-digit secret code (8):
+< 0000
+< 
+< >> Wrong! SVD=10, HD=4
+< >> Guess the 4-digit secret code (7):
+< 0000
+< 
+< >> Wrong! SVD=10, HD=4
+< >> Guess the 4-digit secret code (6):
+< 0000
+< 
+< >> Wrong! SVD=10, HD=4
+< >> Guess the 4-digit secret code (5):
+< 0000
+< 
+< >> Wrong! SVD=10, HD=4
+< >> Guess the 4-digit secret code (4):
+< 0000
+< 
+< >> Wrong! SVD=10, HD=4
+< >> Guess the 4-digit secret code (3):
+< 0000
+< 
+< >> Wrong! SVD=10, HD=4
+< >> Guess the 4-digit secret code (2):
+< 0000
+< 
+< >> Wrong! SVD=10, HD=4
+< >> Guess the 4-digit secret code (1):
+< 0000
+< 
+< >> Wrong - Game over!
+< >> The secret code was: 1234
+---
+> >> 0000
+> >> 0000
+> >> 0000
+> >> 0000
+> >> 0000
+> >> 0000
+> >> 0000
+> >> 0000
+> >> 0000
+> >> 0000
+> >> 1234
