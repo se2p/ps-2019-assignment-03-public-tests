@@ -1,0 +1,24 @@
+4,5c4,5
+< >> Wrong! SVD=10, HD=4
+< >> Guess the 4-digit secret code (9):
+---
+> >> Yikes! Invalid input
+> >> Guess the 4-digit secret code (10):
+8,9c8,9
+< >> Wrong! SVD=9, HD=3
+< >> Guess the 4-digit secret code (8):
+---
+> >> Yikes! Invalid input
+> >> Guess the 4-digit secret code (10):
+12,13c12,13
+< >> Wrong! SVD=-16, HD=4
+< >> Guess the 4-digit secret code (7):
+---
+> >> Yikes! Invalid input
+> >> Guess the 4-digit secret code (10):
+16,17c16,17
+< >> Wrong! SVD=0, HD=2
+< >> Guess the 4-digit secret code (6):
+---
+> >> Yikes! Invalid input
+> >> Guess the 4-digit secret code (10):
