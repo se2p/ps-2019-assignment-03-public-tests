@@ -48,6 +48,13 @@ function __run_test_against_task(){
             ( >&2 echo "Cannot find run.sh " ) 2> >(sed 's/^/    /') | cat >> test-report
             return 1
         fi
+
+        # Assert run.sh is executable
+        if [ ! -x "${TASK_HOME}/run.sh" ]; then 
+            ( >&2 echo "run.sh is NOT executable " ) 2> >(sed 's/^/    /') | cat >> test-report
+            return 1
+        fi
+
     cd - > /dev/null
 
     # Move in task folder
