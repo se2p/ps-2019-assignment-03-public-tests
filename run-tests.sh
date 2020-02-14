@@ -29,10 +29,9 @@ function __run_test_against_task(){
     # 
     ASSERTIONS_HOME="$(realpath "${TEST_HOME}/../../assertions")"
 
-    # TODO Not sure if this is necessary or not...
     # SWAP the secret.code if there's one already (manual test)
     if [ -e ${TASK_HOME}/secret.code ]; then
-        ( >&2 echo mv -v ${TASK_HOME}/secret.code ${TASK_HOME}/secret.code.orig)
+        ( >&2 mv -v ${TASK_HOME}/secret.code ${TASK_HOME}/secret.code.orig )
     fi
 
     # Ensures that the secret.code defined inside the test is where it is supposed to be
@@ -72,7 +71,7 @@ function __run_test_against_task(){
     # Restore the files that were there before execution
     # Not sure I will be able to recover from errors above and make sure the file is restored...
     if [ -e ${TASK_HOME}/secret.code.orig ]; then
-        mv ${TASK_HOME}/secret.code.orig ${TASK_HOME}/secret.code
+        ( >&2 mv -v ${TASK_HOME}/secret.code.orig ${TASK_HOME}/secret.code )
     fi
     
     # Move in test folder
