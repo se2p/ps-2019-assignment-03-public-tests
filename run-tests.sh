@@ -16,10 +16,12 @@ function __find_tests_to_run(){
 }
 function __find_tasks_to_test(){
     # Not robust but better than nothing
+    # Issue #5
     find "$1" -iname "task-1" -type d -or \
              -iname "task-2" -type d -or \
              -iname "task-3" -type d -or \
-             -iname "task-4" -type d
+             -iname "task-4" -type d \
+             -maxdepth 1
 }
 
 function __run_test_against_task(){
@@ -44,13 +46,13 @@ function __run_test_against_task(){
     
         # Assert run.sh is there
         if [ ! -e ${TASK_HOME}/run.sh ]; then 
-            ( >&2 echo "Cannot find run.sh " ) 2> >(sed 's/^/    /') | cat >> test-report
+            ( >&2 echo "Cannot find run.sh in ${TASK_HOME}" ) 2> >(sed 's/^/    /') | cat >> test-report
             return 1
         fi
 
         # Assert run.sh is executable
         if [ ! -x "${TASK_HOME}/run.sh" ]; then 
-            ( >&2 echo "run.sh is NOT executable " ) 2> >(sed 's/^/    /') | cat >> test-report
+            ( >&2 echo "run.sh is NOT executable in ${TASK_HOME}" ) 2> >(sed 's/^/    /') | cat >> test-report
             return 1
         fi
 
